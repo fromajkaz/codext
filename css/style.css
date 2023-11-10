@@ -23,6 +23,7 @@ a {
 
 body {
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -42,10 +43,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.nav .nav-items {
-    display: flex;
-    align-items: center;
-}
+
 
 .header-burger-btn {
     cursor: pointer;
@@ -647,7 +645,8 @@ input::placeholder {
     color: #fff;
 }
 
-@media (width < 900px) {
+@media (width < 990px) {
+
     .header-burger-btn {
         display: block;
         z-index: 2;
@@ -686,7 +685,7 @@ input::placeholder {
         gap: 15px;
     }
     .header {
-        height: 80vh;
+        height: 90vh;
     }
     .header-inner {
         display: grid;
@@ -716,10 +715,8 @@ input::placeholder {
     }
 }
 
+
 @media (width < 769px) {
-    body {
-        margin: 0 30px;
-    }
     .header-content h1 {
         font-size: 32px;
     }
@@ -755,6 +752,10 @@ input::placeholder {
 
     .s1-card {
         width: 350px;
+    }
+
+    .section2 {
+        height: 90vh;
     }
 
     .section2-inner {
